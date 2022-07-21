@@ -1,0 +1,16 @@
+*{
+
+    tab-color : #fa6840;
+    fonts-tab-color : #dfb7ea;
+    button-color : #e9e9e9;
+    fonts-button-color : #1D1D1D;
+    background-color : #ffffff;
+    fonts-general-clolr : #FFFFFF;
+    text-hover-general: #fa6840;
+
+    /*-----------------admin---------------------*/
+    primary-color:#fa6840;
+    second-color:#FFFFFF;
+    hover-color : #000000;
+    text-color : #000000;
+}

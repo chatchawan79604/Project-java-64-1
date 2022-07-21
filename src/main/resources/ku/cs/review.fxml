@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="120.0" prefWidth="750.0" stylesheets="@style/default.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.marketplace.ReviewController">
+   <children>
+      <Label fx:id="nameReviewerLabel" layoutX="5.0" layoutY="1.0" prefHeight="27.0" prefWidth="370.0" styleClass="text-moderate" text="nameReviewer">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="commentLabel" alignment="TOP_LEFT" layoutX="126.0" layoutY="26.0" prefHeight="79.0" prefWidth="518.0" styleClass="text-general" text="comment" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="timeLabel" layoutX="1.0" layoutY="90.0" text="time">
+         <font>
+            <Font size="10.0" />
+         </font></Label>
+      <Separator layoutX="-1.0" layoutY="109.0" prefHeight="11.0" prefWidth="750.0" />
+      <HBox layoutX="4.0" layoutY="30.0" spacing="3.0">
+         <children>
+            <Button fx:id="star1" maxHeight="20.0" maxWidth="20.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" styleClass="star-button" stylesheets="@style/style.css" />
+            <Button fx:id="star2" maxHeight="20.0" maxWidth="20.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" styleClass="star-button" stylesheets="@style/style.css" />
+            <Button fx:id="star3" maxHeight="20.0" maxWidth="20.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" styleClass="star-button" stylesheets="@style/style.css" />
+            <Button fx:id="star4" maxHeight="20.0" maxWidth="20.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" styleClass="star-button" stylesheets="@style/style.css" />
+            <Button fx:id="star5" maxHeight="20.0" maxWidth="20.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" styleClass="star-button" stylesheets="@style/style.css" />
+         </children>
+      </HBox>
+      <Button fx:id="reportButton" layoutX="653.0" layoutY="5.0" mnemonicParsing="false" onAction="#handleReportReview" text="รายงาน">
+         <styleClass>
+            <String fx:value="shape-button-general" />
+            <String fx:value="button-round" />
+            <String fx:value="text-general" />
+         </styleClass></Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="381.0" prefWidth="982.0" stylesheets="@style/style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.admin.ReportedProductPreviewController">
+   <children>
+      <VBox layoutX="10.0" layoutY="10.0" prefHeight="367.0" prefWidth="956.0">
+         <children>
+            <HBox prefHeight="33.0" prefWidth="1360.0" />
+            <HBox prefHeight="456.0" prefWidth="956.0">
+               <children>
+                  <Pane prefHeight="454.0" prefWidth="37.0" />
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                     <children>
+                        <ImageView fx:id="imageProduct" fitHeight="323.0" fitWidth="368.0" pickOnBounds="true" />
+                     </children>
+                  </VBox>
+                  <AnchorPane prefHeight="671.0" prefWidth="62.0" />
+                  <VBox prefHeight="402.0" prefWidth="527.0" spacing="10.0">
+                     <children>
+                        <HBox prefHeight="0.0" prefWidth="762.0">
+                           <children>
+                              <Label fx:id="nameProductLabel" text="nameProductLabel" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="0.0" prefWidth="762.0" spacing="10.0">
+                           <children>
+                              <Label text="ราคา">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="costLabel" text="costLabel">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font></Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="0.0" prefWidth="762.0">
+                           <children>
+                              <Label text="รายละเอียด">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="175.0" prefWidth="762.0">
+                           <children>
+                              <Pane prefHeight="175.0" prefWidth="512.0">
+                                 <children>
+                                    <Label fx:id="detailProductLabel" alignment="TOP_LEFT" layoutX="6.0" layoutY="9.0" prefHeight="158.0" prefWidth="497.0" text="detailProductLabel" wrapText="true" />
+                                 </children>
+                              </Pane>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="27.0" prefWidth="716.0" spacing="10.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

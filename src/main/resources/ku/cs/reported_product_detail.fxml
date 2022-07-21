@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1360.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.admin.ReportedProductDetailController">
+    <children>
+        <HBox alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="768.0" prefWidth="270.0" styleClass="non-round-background-color" stylesheets="@style/style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="768.0" prefWidth="1153.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="706.0" prefWidth="1019.0" styleClass="round-background-white">
+                     <children>
+                        <HBox prefHeight="108.0" prefWidth="1153.0">
+                           <children>
+                              <Label prefHeight="56.0" prefWidth="699.0" text=" " />
+                           </children></HBox>
+                        <HBox alignment="CENTER" prefHeight="44.0" prefWidth="1153.0">
+                           <children>
+                              <Label alignment="TOP_LEFT" contentDisplay="CENTER" styleClass="font-intro" text="รายงานสินค้า">
+                                 <font>
+                                    <Font size="35.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="126.0" prefWidth="1153.0">
+                           <children>
+                              <VBox prefHeight="110.0" prefWidth="42.0" />
+                              <GridPane fx:id="grid" prefHeight="111.0" prefWidth="111.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                              </GridPane>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="72.0" prefWidth="1035.0" />
+                        <HBox alignment="CENTER_LEFT" prefHeight="103.0" prefWidth="1153.0">
+                           <children>
+                              <Pane prefHeight="74.0" prefWidth="44.0" />
+                              <Label alignment="CENTER" text="หมวดหมู่ :">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Pane prefHeight="74.0" prefWidth="5.0" />
+                              <Label fx:id="categoryLabel" text="categoryLabel">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="148.0" prefWidth="1153.0">
+                           <children>
+                              <Pane prefHeight="74.0" prefWidth="44.0" />
+                              <Label alignment="CENTER" text="คำอธิบาย :">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Pane prefHeight="74.0" prefWidth="5.0" />
+                              <Label fx:id="detailLabel" alignment="TOP_LEFT" prefHeight="119.0" prefWidth="559.0" text="detailLabel" wrapText="true">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="103.0" prefWidth="1035.0">
+                           <children>
+                              <Pane prefHeight="74.0" prefWidth="44.0" />
+                              <Label alignment="CENTER" text="เจ้าของการรายงาน : ">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Pane prefHeight="74.0" prefWidth="5.0" />
+                              <Label fx:id="reporterLabel" text="reporterLabel">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="103.0" prefWidth="1035.0">
+                           <children>
+                              <Pane prefHeight="74.0" prefWidth="44.0" />
+                              <Label alignment="CENTER" text="เวลาของรายงาน :">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Pane prefHeight="74.0" prefWidth="5.0" />
+                              <Label fx:id="timeLabel" text="timeLabel">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <VBox alignment="TOP_RIGHT" prefHeight="228.0" prefWidth="1153.0">
+                           <children>
+                              <HBox prefHeight="236.0" prefWidth="1153.0" />
+                              <HBox alignment="TOP_RIGHT" prefHeight="283.0" prefWidth="1153.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" onAction="#handleBanSeller" prefHeight="44.0" styleClass="shape-button-add" text="ระงับการใช้งานเจ้าของสินค้า" wrapText="true" />
+                                    <Pane prefHeight="67.0" prefWidth="20.0" />
+                                    <Button mnemonicParsing="false" onAction="#handleDeleteReport" prefHeight="44.0" styleClass="shape-button-add" text="ลบการรายงานนี้" />
+                                    <Pane prefHeight="70.0" prefWidth="32.0" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+        </HBox>
+      <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="44.0" prefWidth="86.0" styleClass="back-font-button" stylesheets="@style/style.css" text="&lt;&lt;">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

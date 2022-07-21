@@ -1,0 +1,119 @@
+@import "font.css";
+
+.root {
+    -fx-font-family: "THSarabun";
+    -fx-font-size: 18;
+}
+
+/* ปุ่มเมนูบนสุด */
+.button-home-tab{
+    -fx-background-color : tab-color;
+    -fx-font-family: "THSarabun";
+    -fx-text-fill : fonts-tab-color;
+    -fx-font-size: 22;
+}
+
+/* ปุ่มทั้วไป */
+.text-button{
+    -fx-font-family: "THSarabun";
+    -fx-font-size: 18;
+}
+
+
+.shape-button-bar{
+    -fx-font-family: "THSarabun";
+    -fx-background-color: button-color;
+    -fx-text-fill : fonts-button-color;
+    -fx-background-radius: 16;
+    -fx-font-size: 18;
+}
+
+/*ปุ่มเลือก ปุ่มบันทึก*/
+.shape-button-add{
+    -fx-font-family: "THSarabun";
+    -fx-text-fill : fonts-button-color;
+    -fx-background-radius: 10;
+    -fx-font-size: 16;
+}
+
+/*-----------------------------------*/
+
+.text-general{
+    -fx-font-family: "THSarabun";
+    -fx-font-size: 18;
+    -fx-font-color : fonts-general-clolr;
+}
+
+.text-product{
+    -fx-font-family: "THSarabun";
+    -fx-font-size: 15;
+    -fx-font-color : fonts-general-clolr;
+}
+
+.text-moderate{
+    -fx-font-family:"THSarabun";
+    -fx-font-size: 18;
+    -fx-font-color : fonts-general-clolr;
+}
+
+.text-title{
+    -fx-font-family: "THSarabun";
+    -fx-font-size: 24;
+    -fx-font-color : fonts-general-clolr;
+}
+
+.text-page-title{
+    -fx-font-family: "THSarabun";
+    -fx-font-size: 25;
+    -fx-text-fill: tab-color;
+}
+
+/*ปุ่มย้อนกลับ*/
+.back-font-button{
+    -fx-background-color: transparent;
+    -fx-font-family: "THSarabun";
+    -fx-font-size: 20;
+    -fx-text-fill: second-color;
+}
+
+.button-signin{
+    -fx-font-family: "THSarabun";
+    -fx-background-color: button-color;
+    -fx-text-fill : fonts-button-color;
+    -fx-background-radius: 16;
+    -fx-font-size: 20;
+}
+
+.button-change-page{
+    -fx-background-color: #00000000;
+    -fx-font-family: "THSarabun";
+    -fx-font-size: 18;
+}
+
+.logout-button{
+    -fx-font-family: "THSarabun";
+    -fx-font-size: 20;
+    -fx-text-fill: second-color;
+    -fx-background-color: transparent;
+}
+
+.font-in-intro{
+    -fx-font-family: "THSarabun";
+}
+
+.font-intro{
+    -fx-font-family: "THSarabun";
+    -fx-text-fill: fonts-general-clolr;
+    -fx-font-size: 30;
+}
+
+.font-intro-mini{
+    -fx-font-family: "THSarabun";
+    -fx-text-fill: #a3a3a3;
+}
+
+.text-welcome{
+    -fx-font-family: "THSarabun";
+    -fx-text-fill: tab-color;
+    -fx-font-size: 30;
+}

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="38.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.shop.SupOrderController">
+   <children>
+      <HBox alignment="CENTER_LEFT" layoutY="4.0" prefHeight="50.0" prefWidth="1360.0" spacing="8.0">
+         <children>
+            <Pane prefHeight="72.0" prefWidth="142.0">
+               <children>
+                  <ImageView fx:id="productImage" fitHeight="50.0" fitWidth="51.0" layoutX="46.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </Pane>
+            <Label fx:id="productNameLabel" prefHeight="30.0" prefWidth="284.0" text="productNameLabel">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Pane prefHeight="50.0" prefWidth="27.0" />
+            <Label fx:id="orderQuantity" contentDisplay="CENTER" prefHeight="30.0" prefWidth="198.0" text="orderQuantity">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Label fx:id="productPrice" contentDisplay="CENTER" prefHeight="30.0" prefWidth="196.0" text="productPrice">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Label fx:id="myShipping" prefHeight="40.0" prefWidth="139.0" text="myShipping">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Pane prefHeight="50.0" prefWidth="369.0">
+               <children>
+                  <Button fx:id="saveTracking" layoutX="183.0" layoutY="6.0" mnemonicParsing="false" onAction="#trackingButton" prefHeight="19.0" prefWidth="119.0" styleClass="shape-button-add" stylesheets="@style/default.css" text="บันทึกเลขพัสดุ" />
+                  <TextField fx:id="trackingTextField" layoutX="7.0" layoutY="10.0" prefHeight="25.0" prefWidth="159.0" promptText="ใส่เลขพัสดุ" styleClass="button-round" stylesheets="@style/default.css">
+                     <font>
+                        <Font size="14.0" />
+                     </font></TextField>
+                  <Label fx:id="trackingNumber" layoutX="23.0" layoutY="10.0" prefHeight="30.0" prefWidth="159.0" text="trackingNumber">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

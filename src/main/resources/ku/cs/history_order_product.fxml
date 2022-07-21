@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="166.0" prefWidth="569.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.user.HistoryOrderProductController">
+   <children>
+      <VBox prefHeight="166.0" prefWidth="569.0" styleClass="background-color-righting" stylesheets="@style/default.css">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="37.0" prefWidth="570.0" style="-fx-background-color: A1A1A1;">
+               <children>
+                  <Pane prefHeight="30.0" prefWidth="8.0" />
+                  <ImageView fitHeight="25.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/bar/stroe.png" />
+                     </image>
+                  </ImageView>
+                  <Pane prefHeight="18.0" prefWidth="19.0" />
+                  <Label fx:id="ShopLabel" prefHeight="30.0" prefWidth="505.0" styleClass="text-moderate" stylesheets="@style/default.css" text="Label" textFill="WHITE">
+                     <font>
+                        <Font size="5.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="131.0" prefWidth="570.0">
+               <children>
+                  <Pane prefHeight="130.0" prefWidth="146.0">
+                     <children>
+                        <ImageView fx:id="productImage" fitHeight="100.0" fitWidth="100.0" layoutX="11.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </Pane>
+                  <VBox prefHeight="130.0" prefWidth="420.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="0.0">
+                           <children>
+                              <Label prefHeight="30.0" prefWidth="92.0" styleClass="text-button" stylesheets="@style/default.css" text="ชื่อสินค้า :" />
+                              <Label fx:id="productNameLabel" prefHeight="30.0" prefWidth="324.0" styleClass="text-general" stylesheets="@style/default.css" text="Label" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="0.0">
+                           <children>
+                              <Label prefHeight="30.0" prefWidth="66.0" styleClass="text-button" stylesheets="@style/default.css" text="ราคา :  " />
+                              <Label fx:id="priceLabel" prefHeight="30.0" prefWidth="346.0" styleClass="text-general" stylesheets="@style/default.css" text="Label" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="0.0">
+                           <children>
+                              <Label styleClass="text-button" stylesheets="@style/default.css" text="จำนวนที่ซื้อ : " />
+                              <Label fx:id="NumProductLabel" prefHeight="30.0" prefWidth="309.0" styleClass="text-general" stylesheets="@style/default.css" text="Label" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="0.0">
+                           <children>
+                              <Label prefHeight="30.0" prefWidth="102.0" styleClass="text-button" stylesheets="@style/default.css" text="เลขพัสดุ :" />
+                              <Label fx:id="TrackingLabel" prefHeight="30.0" prefWidth="305.0" styleClass="text-general" stylesheets="@style/default.css" text="Label" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

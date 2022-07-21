@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "Mitr Bold";
+    font-weight: 400;
+    src: url('../Font/Mitr/Mitr-Bold.ttf') ;
+}
+
+@font-face {
+    font-family: "Mitr Extra Light";
+    font-weight: 400;
+    src: url('../Font/Mitr/Mitr-ExtraLight.ttf');
+}
+
+@font-face {
+    font-family: "Mitr Light";
+    font-weight: 400;
+    src: url('../Font/Mitr/Mitr-Light.ttf') ;
+}
+
+@font-face {
+    font-family: "Mitr Medium";
+    font-weight: 400;
+    src: url('../Font/Mitr/Mitr-Medium.ttf') ;
+}
+
+@font-face {
+    font-family: "Mitr Ragular";
+    font-weight: 400;
+    src: url('../Font/Mitr/Mitr-Regular.ttf') ;
+}
+
+@font-face {
+    font-family: "Mitr SemiBold";
+    font-weight: 400;
+    src: url('../Font/Mitr/Mitr-SemiBold.ttf') ;
+}
+
+@font-face {
+    font-family: "THSarabun";
+    font-weight: 400;
+    src: url('../Font/THsarabun/THSarabun.ttf');
+}
+
+@font-face {
+    font-family: "Birthstone-Regular";
+    font-weight: 400;
+    src: url('../Font/Birthstone/Birthstone-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Ephesis-Regular";
+    font-weight: 400;
+    src: url('../Font/Ephesis/Ephesis-Regular.ttf');
+}
+
+
+
+

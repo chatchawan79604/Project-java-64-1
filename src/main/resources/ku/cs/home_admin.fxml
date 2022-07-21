@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1360.0" styleClass="round-background-color" stylesheets="@style/style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.admin.HomeAdminController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="768.0" prefWidth="347.0" stylesheets="@style/style.css">
+         <children>
+            <Pane prefHeight="81.0" prefWidth="251.0" />
+            <Label fx:id="accountNameLabel" contentDisplay="CENTER" styleClass="font-name" text="nameLabel" textAlignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+            <Pane prefHeight="81.0" prefWidth="271.0" />
+            <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#handleAdminHome" prefHeight="70.0" styleClass="bar-text-button" stylesheets="@style/style.css" text="เวลาเข้าใช้ล่าสุดของผู้ใช้งานแต่ละคน" />
+            <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#handleReportedProductPanel" prefHeight="65.0" prefWidth="346.0" styleClass="bar-text-button" stylesheets="@style/style.css" text="สินค้าที่ได้รับการรายงาน" />
+            <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#handleReportedReviewPanel" prefHeight="70.0" prefWidth="351.0" styleClass="bar-text-button" stylesheets="@style/style.css" text="รีวิวที่ได้รับการรายงาน" />
+            <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#handleCreateCategory" prefHeight="70.0" prefWidth="346.0" styleClass="bar-text-button" stylesheets="@style/style.css" text="เพิ่มหมวดหมู่สินค้า" />
+            <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#handleChangePassword" prefHeight="70.0" prefWidth="347.0" styleClass="bar-text-button" stylesheets="@style/style.css" text="เปลี่ยนรหัสผ่าน" />
+            <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#handleCheckBlacklist" prefHeight="70.0" prefWidth="347.0" styleClass="bar-text-button" stylesheets="@style/style.css" text="รายชื่อผู้เข้าใช้ที่ถูกระงับการใช้งาน" />
+            <Pane prefHeight="407.0" prefWidth="325.0" />
+            <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#handleLogout" prefHeight="70.0" prefWidth="347.0" styleClass="logout-button" stylesheets="@style/style.css" text="ออกจากระบบ" textFill="RED" />
+         </children>
+      </VBox>
+      <TabPane fx:id="tabPane" layoutX="347.0" layoutY="-49.0" prefHeight="813.0" prefWidth="1011.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="logTimeTab" text="logtime">
+               <content>
+                  <ScrollPane layoutX="1327.0" layoutY="3.0" prefHeight="643.0" prefWidth="1011.0">
+                     <content>
+                        <GridPane fx:id="accountGrid" alignment="CENTER" prefHeight="107.0" prefWidth="1015.0">
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                     </content>
+                  </ScrollPane>
+               </content>
+            </Tab>
+            <Tab fx:id="ReportedProductPanelTab" text="ReportedProduct">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ScrollPane prefHeight="768.0" prefWidth="1068.0" vbarPolicy="NEVER">
+                           <content>
+                              <GridPane fx:id="reportedProductGrid" alignment="CENTER" prefHeight="107.0" prefWidth="1028.0">
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="ReportedReviewPanelTab" text="ReportedReview">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ScrollPane prefHeight="768.0" prefWidth="1068.0" vbarPolicy="NEVER">
+                           <content>
+                              <GridPane fx:id="reportedReviewGrid" alignment="CENTER" prefHeight="107.0" prefWidth="1028.0">
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="changePasswordTab" text="changePassword">
+               <content>
+                  <AnchorPane prefHeight="711.0" prefWidth="1011.0" style="-fx-background-color: ffffff;">
+                     <children>
+                        <VBox alignment="TOP_CENTER" layoutY="75.0" prefHeight="706.0" prefWidth="1010.0">
+                           <children>
+                              <Label styleClass="font-intro" text="Chang Password Admin">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                              <Pane prefHeight="470.0" prefWidth="1010.0">
+                                 <children>
+                                    <GridPane alignment="CENTER_RIGHT" layoutX="212.0" layoutY="53.0" prefHeight="189.0" prefWidth="566.0">
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="250.5333251953125" minWidth="10.0" prefWidth="212.40003662109376" />
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="352.79996337890617" minWidth="10.0" prefWidth="352.79996337890617" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints fillHeight="false" maxHeight="57.066656494140624" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                                        <RowConstraints fillHeight="false" maxHeight="79.20001678466798" minHeight="3.7333435058593736" prefHeight="50.0" vgrow="SOMETIMES" />
+                                        <RowConstraints fillHeight="false" maxHeight="64.9999755859375" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <HBox alignment="CENTER_RIGHT">
+                                             <children>
+                                                <Label prefHeight="27.0" prefWidth="106.0" text="Password :">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                          <PasswordField fx:id="password" prefHeight="25.0" prefWidth="338.0" promptText="Password" styleClass="button-round" GridPane.columnIndex="1">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </PasswordField>
+                                          <HBox alignment="CENTER_RIGHT" GridPane.rowIndex="1">
+                                             <children>
+                                                <Label prefHeight="27.0" prefWidth="144.0" text="New Password :">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                          <PasswordField fx:id="newPassword" prefHeight="25.0" prefWidth="338.0" promptText="New Password" styleClass="button-round" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </PasswordField>
+                                          <HBox alignment="CENTER_RIGHT" GridPane.rowIndex="2">
+                                             <children>
+                                                <Label prefHeight="27.0" prefWidth="210.0" text="Confirm New Password :">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                          <PasswordField fx:id="confirmNewPassword" prefHeight="25.0" prefWidth="338.0" promptText="Confirm New Password" styleClass="button-round" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </PasswordField>
+                                       </children>
+                                    </GridPane>
+                                    <Button layoutX="376.0" layoutY="291.0" mnemonicParsing="false" onAction="#setPassword" prefHeight="39.0" prefWidth="243.0" styleClass="shape-button-add" text="Submit">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Button>
+                                 </children></Pane>
+                              <VBox />
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </content></Tab>
+            <Tab fx:id="createCategoryTab" text="createCategory">
+               <content>
+                  <AnchorPane prefHeight="711.0" prefWidth="1011.0" style="-fx-background-color: ffffff;">
+                     <children>
+                        <HBox alignment="CENTER" layoutY="100.0" prefHeight="675.0" prefWidth="1011.0" spacing="50.0">
+                           <children>
+                              <VBox alignment="TOP_CENTER" prefHeight="675.0" prefWidth="315.0">
+                                 <children>
+                                    <AnchorPane prefHeight="91.0" prefWidth="1012.0" />
+                                    <HBox alignment="CENTER" prefHeight="59.0" prefWidth="1012.0">
+                                       <children>
+                                          <TextField fx:id="categoryTextField" alignment="CENTER" prefHeight="43.0" prefWidth="245.0" promptText="กรุณาใส่ชื่อหมวดหมู่ของสินค้า" styleClass="button-round">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </TextField>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="58.0" prefWidth="1012.0">
+                                       <children>
+                                          <Label prefHeight="27.0" styleClass="font-price" text="เลือกคุณสมบัติของหมวดหมู่" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER">
+                                       <children>
+                                          <VBox prefHeight="283.0" prefWidth="209.0" spacing="5.0">
+                                             <children>
+                                                <CheckBox fx:id="checkBoxModel" mnemonicParsing="false" text="ชื่อรุ่น" />
+                                                <CheckBox fx:id="checkBoxCapacity" mnemonicParsing="false" text="ความจุ" />
+                                                <CheckBox fx:id="checkBoxColor" mnemonicParsing="false" text="สี" />
+                                                <CheckBox fx:id="checkBoxHeight" mnemonicParsing="false" text="ความสูง" />
+                                                <CheckBox fx:id="checkBoxLength" mnemonicParsing="false" text="ความยาว" />
+                                                <CheckBox fx:id="checkBoxWidth" mnemonicParsing="false" text="ความกว้าง" />
+                                                <CheckBox fx:id="checkBoxDiameter" mnemonicParsing="false" text="เส้นผ่านศูนย์กลาง" />
+                                                <CheckBox fx:id="checkBoxSize" mnemonicParsing="false" text="ไซต์" />
+                                                <CheckBox fx:id="checkBoxWeight" mnemonicParsing="false" text="น้ำหนัก" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="13.0" prefWidth="1012.0" spacing="15.0" />
+                                    <HBox alignment="CENTER">
+                                       <children>
+                                          <Button mnemonicParsing="false" onAction="#handleAddCategoryButton" prefHeight="50.0" prefWidth="135.0" stylesheets="@style/style.css" text="เพิ่มหมวดหมู่" textFill="#25008c">
+                                             <styleClass>
+                                                <String fx:value="button-round-smale" />
+                                                <String fx:value="font-product-name" />
+                                             </styleClass>
+                                          </Button>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="675.0" prefWidth="405.0">
+                                 <children>
+                                    <HBox prefHeight="93.0" prefWidth="406.0" />
+                                    <HBox alignment="CENTER" prefHeight="52.0" prefWidth="406.0">
+                                       <children>
+                                          <Label text="คลังหมวดหมู่" />
+                                       </children>
+                                    </HBox>
+                                    <ListView fx:id="categoryListView" prefHeight="419.0" prefWidth="406.0" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="BOTTOM_CENTER" layoutX="240.0" layoutY="14.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <children>
+                              <Label prefHeight="61.0" styleClass="font-intro" text="เพิ่มหมวดหมู่สินค้า">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="BlacklistAccountTab" text="BlacklistAccount">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ScrollPane prefHeight="768.0" prefWidth="1068.0">
+                           <content>
+                              <GridPane fx:id="blacklistGrid" alignment="CENTER" prefHeight="107.0" prefWidth="1028.0">
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

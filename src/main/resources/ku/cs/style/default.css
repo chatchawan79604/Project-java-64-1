@@ -1,0 +1,219 @@
+@import "font.css";
+
+.root {
+    -fx-font-family: "Mitr Ragular";
+    -fx-font-size: 18;
+}
+
+/* ปุ่มเมนูบนสุด */
+
+.button-home-tab{
+    -fx-background-color : transparent;
+    -fx-font-family: "Mitr Regular";
+    -fx-text-fill : fonts-tab-color;
+    -fx-font-size: 22;
+}
+.button-home-tab:hover{
+    -fx-text-fill: #E5E5E5;
+}
+
+/* ปุ่มทั้วไป */
+
+.text-button{
+    -fx-font-family: "Mitr Regular";
+    -fx-font-size: 18;
+}
+
+.shape-button-bar{
+    -fx-font-family: "Mitr Regular";
+    -fx-background-color: button-color;
+    -fx-text-fill : fonts-button-color;
+    -fx-background-radius: 16;
+    -fx-font-size: 18;
+}
+.shape-button-bar:hover{
+    -fx-text-fill: text-hover-general;
+}
+
+.shape-button-general{
+    -fx-background-color: button-color;
+    -fx-text-fill : fonts-button-color;
+}
+
+.shape-button-general-non-background{
+    -fx-text-fill : fonts-button-color;
+    -fx-font-size: 18;
+}
+
+/*ปุ่มเลือก ปุ่มบันทึก*/
+
+.shape-button-add{
+    -fx-font-family: "Mitr Regular";
+    -fx-text-fill : fonts-button-color;
+    -fx-background-radius: 10;
+    -fx-background-color: button-color;
+    -fx-font-size: 16;
+}
+
+.button-round{
+    -fx-background-radius: 16;
+    -fx-size:10
+}
+
+.button-round-smale{
+    -fx-background-radius: 10;
+    -fx-size:10
+}
+/*-----------------------------------*/
+
+.background-color-transparent{
+    -fx-background-color: transparent;
+}
+
+.background-color-full{
+    -fx-background-color: tab-color;
+}
+
+.background-tab-color{
+    -fx-background-color: tab-color;
+}
+
+.round-background-white{
+    -fx-background-color: white;
+    -fx-background-radius: 30;
+}
+.background-color-white{
+    -fx-background-color: white;
+}
+
+.text-hover:hover{
+    -fx-text-fill: #9F9F9F;
+}
+
+.text-general{
+    -fx-font-family: "Mitr Light";
+    -fx-font-size: 18;
+    -fx-font-color : fonts-general-clolr;
+}
+
+.text-product{
+    -fx-font-family: "Mitr Light";
+    -fx-font-size: 15;
+    -fx-font-color : fonts-general-clolr;
+}
+
+.text-moderate{
+    -fx-font-family: "Mitr Medium";
+    -fx-font-size: 18;
+    -fx-font-color : fonts-general-clolr;
+}
+
+.text-title{
+    -fx-font-family: "Mitr SemiBold";
+    -fx-font-size: 24;
+    -fx-font-color : fonts-general-clolr;
+}
+
+.text-page-title{
+    -fx-font-family: "Mitr Medium";
+    -fx-font-size: 25;
+    -fx-text-fill: tab-color;
+}
+
+.button-hover-background :hover {
+    -fx-background-color: #E6E6E6 ;
+}
+
+.background-color-righting{
+    -fx-background-color: #FEFFFF;
+}
+
+/*ปุ่มย้อนกลับ*/
+
+
+.back-font-button:hover{
+    -fx-text-fill: button-color;
+}
+
+.back-font-button{
+    -fx-background-color: transparent;
+    -fx-font-family: "Mitr Bold";
+    -fx-font-size: 20;
+}
+
+.button-signin{
+    -fx-font-family: "Mitr Regular";
+    -fx-background-color: button-color;
+    -fx-text-fill : fonts-button-color;
+    -fx-background-radius: 16;
+    -fx-font-size: 20;
+}
+
+.button-change-page{
+    -fx-background-color: #00000000;
+    -fx-font-family: "Mitr Regular";
+    -fx-font-size: 18;
+}
+
+.logout-button{
+    -fx-font-family: "Mitr Medium";
+    -fx-font-size: 20;
+    -fx-text-fill: tab-color;
+    -fx-background-color: transparent;
+}
+
+.font-in-intro{
+    -fx-font-family: "Mitr SemiBold";
+}
+
+.font-intro{
+    -fx-font-family: "Mitr Bold";
+    -fx-text-fill: fonts-general-clolr;
+    -fx-font-size: 30;
+}
+
+.font-intro-mini{
+    -fx-font-family: "Mitr Light";
+    -fx-text-fill: #a3a3a3;
+}
+
+.text-welcome{
+    -fx-font-family: "Mitr SemiBold";
+    -fx-text-fill: tab-color;
+    -fx-font-size: 30;
+}
+
+.button-signin:hover{
+     -fx-text-fill: text-hover-general;
+}
+
+.button-change-page:hover{
+     -fx-text-fill: #e5e5e5;
+}
+
+.logout-button:hover{
+    -fx-text-fill: red;
+}
+
+.exit-button{
+    -fx-font-family: "Mitr Bold";
+    -fx-font-size: 20;
+    -fx-text-fill: fonts-button-color;
+    -fx-background-color: transparent;
+}
+.exit-button:hover{
+    -fx-text-fill: white;
+    -fx-background-color: red;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: background-color;
+}
+
+.scroll-pane {
+    -fx-background-color: background-color;
+}
+
+
+
+

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="768.0" maxWidth="1360.0" minHeight="768.0" minWidth="1360.0" prefHeight="768.0" prefWidth="1360.0" styleClass="background-tab-color" stylesheets="@style/default.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.home.HowToUseController">
+   <children>
+      <Button mnemonicParsing="false" onAction="#handleBackToLogin" styleClass="back-font-button" stylesheets="@style/default.css" text="&lt;&lt;" />
+      <HBox alignment="TOP_CENTER" prefHeight="93.0" prefWidth="1360.0">
+         <children>
+            <AnchorPane prefHeight="79.0" styleClass="round-background-white">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="16.0" layoutY="3.0" prefHeight="93.0" styleClass="text-welcome" stylesheets="@style/default.css" text="แนะนำการใช้งานโปรแกรม" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="3.0">
+                     <font>
+                        <Font name="System Bold" size="44.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="678.0" prefWidth="1360.0">
+         <children>
+            <ImageView fitHeight="615.0" fitWidth="1253.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/how_to_use/how_to_use.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </children>
+</VBox>

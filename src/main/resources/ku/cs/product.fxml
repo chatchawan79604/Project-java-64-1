@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane onMousePressed="#clickProduct" prefHeight="300.0" prefWidth="210.0" style="-fx-border-color: CDCDCD;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.marketplace.ProductController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="5.0" layoutY="6.0" prefHeight="290.0" prefWidth="200.0" styleClass="background-transparent">
+         <children>
+            <ImageView fx:id="productImage" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" />
+            <HBox alignment="CENTER_LEFT" maxWidth="200.0" prefWidth="200.0" styleClass="background-transparent">
+               <children>
+                  <Label fx:id="productNameLabel" maxWidth="200.0" prefHeight="30.0" prefWidth="200.0" styleClass="text-moderate" stylesheets="@style/default.css" text="productNameLabel" textFill="#383838" />
+               </children>
+            </HBox>
+            <HBox alignment="BASELINE_LEFT" maxWidth="200.0" spacing="5.0" styleClass="background-transparent">
+               <children>
+                  <Label fx:id="priceLabel" styleClass="text-moderate" text="priceLabel" textFill="#f44747" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

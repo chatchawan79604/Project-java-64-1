@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_RIGHT" maxHeight="768.0" maxWidth="1360.0" minHeight="768.0" minWidth="1360.0" prefHeight="768.0" prefWidth="1360.0" styleClass="background-color-transparent" stylesheets="@style/default.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.marketplace.MarketplaceController">
+   <children>
+      <HBox alignment="CENTER_RIGHT" prefWidth="1360.0" spacing="5.0" styleClass="background-tab-color">
+         <children>
+            <ImageView fitHeight="30.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/bar/stroe.png" />
+               </image>
+            </ImageView>
+            <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#handleShopButton" styleClass="button-home-tab" stylesheets="@style/default.css" text="ร้านค้า">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="19.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/bar/history.png" />
+               </image>
+            </ImageView>
+            <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#handleHistory" styleClass="button-home-tab" stylesheets="@style/default.css" text="ประวัติการสั่งซื้อ">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="20.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/bar/profile.png" />
+               </image>
+            </ImageView>
+            <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#handleMyProfile" styleClass="button-home-tab" stylesheets="@style/default.css" text="โปรไฟล์">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Circle fx:id="userImage" fill="DODGERBLUE" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+            <AnchorPane prefHeight="60.0" prefWidth="12.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" minHeight="44.0" minWidth="1360.0" prefHeight="54.0" prefWidth="1360.0" spacing="10.0" styleClass="background-color-white">
+         <children>
+            <Label text="การจัดเรียง">
+               <styleClass>
+                  <String fx:value="button-general-non-background" />
+                  <String fx:value="text-button" />
+               </styleClass>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#allProductButton" prefHeight="39.0" prefWidth="113.0" styleClass="shape-button-bar" stylesheets="@style/default.css" text="สินค้าล่าสุด">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#ascendingButton" styleClass="shape-button-bar" text="ราคาจากน้อยไปมาก">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#descendingButton" styleClass="shape-button-bar" text="ราคาจากมากไปน้อย">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ComboBox fx:id="categoryComboBox" onAction="#selectCategoryComboBox" promptText="หมวดหมู่">
+               <styleClass>
+                  <String fx:value="shape-button-general" />
+                  <String fx:value="button-round" />
+                  <String fx:value="text-button" />
+                  <String fx:value="text-hover" />
+               </styleClass>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ComboBox>
+            <Label text="ช่วงราคา">
+               <styleClass>
+                  <String fx:value="button-general-non-background" />
+                  <String fx:value="text-button" />
+               </styleClass>
+            </Label>
+            <TextField fx:id="minimumPriceTextField" prefWidth="120.0">
+               <styleClass>
+                  <String fx:value="text-button" />
+                  <String fx:value="button-round" />
+               </styleClass>
+            </TextField>
+            <Label text="-">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="button-general-non-background" />
+                  <String fx:value="text-button" />
+               </styleClass>
+            </Label>
+            <TextField fx:id="maximumPriceTextField" prefWidth="120.0">
+               <styleClass>
+                  <String fx:value="text-button" />
+                  <String fx:value="button-round" />
+               </styleClass>
+            </TextField>
+            <Button mnemonicParsing="false" onAction="#searchRangeCostButton" styleClass="shape-button-bar" text="ค้นหา">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </HBox>
+      <VBox prefWidth="1360.0" styleClass="background-color-white">
+         <children>
+            <ScrollPane fx:id="scroll" hbarPolicy="NEVER" maxHeight="648.0" prefHeight="648.0">
+               <content>
+                  <GridPane fx:id="grid" minWidth="1360.0" style="-fx-background-color: background-color;">
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </children>
+</VBox>

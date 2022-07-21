@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="gsd" prefHeight="768.0" prefWidth="1360" styleClass="background-color-transparent" stylesheets="@style/default.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.home.AboutUsController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="background-color-full" stylesheets="@style/default.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button layoutX="25.0" layoutY="11.0" mnemonicParsing="false" onAction="#handleBackToLogin" styleClass="back-font-button" stylesheets="@style/default.css" text="&lt;&lt;" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="8.0" />
+            <AnchorPane layoutX="522.0" layoutY="43.0" prefHeight="100.0" prefWidth="316.0" styleClass="round-background-white" AnchorPane.leftAnchor="522.0" AnchorPane.rightAnchor="522.0" AnchorPane.topAnchor="43.0">
+               <children>
+                  <Label layoutX="16.0" layoutY="3.0" prefHeight="94.0" prefWidth="284.0" text="About us" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="3.0">
+                     <font>
+                        <Font name="System Bold" size="64.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <HBox alignment="CENTER" prefHeight="541.0" prefWidth="1328.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="180.0">
+         <children>
+            <AnchorPane prefHeight="532.0" prefWidth="232.0" styleClass="round-background-white" stylesheets="@style/default.css">
+               <children>
+                  <Circle fill="#be1ae7" layoutX="173.0" layoutY="142.0" radius="104.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" AnchorPane.bottomAnchor="212.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="38.0" />
+                  <Circle fx:id="imagePound" fill="DODGERBLUE" layoutX="173.0" layoutY="141.0" radius="100.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="5.0" AnchorPane.leftAnchor="44.0" AnchorPane.rightAnchor="44.0" AnchorPane.topAnchor="42.0" />
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <Label text="ปังปอนด์" textFill="#be1ae7">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label text="ชัชวาล เมืองใหม่">
+                           <font>
+                              <Font size="26.0" />
+                           </font>
+                        </Label>
+                        <Label text="6310400959" textFill="#be1ae7">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <Pane prefHeight="532.0" prefWidth="17.0" />
+            <AnchorPane prefHeight="532.0" prefWidth="232.0" styleClass="round-background-white">
+               <children>
+                  <Circle fill="#8900ff" radius="104.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" AnchorPane.bottomAnchor="212.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="38.0" />
+                  <Circle fx:id="imageJik" fill="DODGERBLUE" radius="100.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="5.0" AnchorPane.bottomAnchor="216.0" AnchorPane.leftAnchor="44.0" AnchorPane.rightAnchor="44.0" AnchorPane.topAnchor="42.0" />
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <Label text="จิ๊ก" textFill="#8900ff">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label text="จิรัชญา ผ่านพินิจ">
+                           <font>
+                              <Font size="26.0" />
+                           </font>
+                        </Label>
+                        <Label text="6310400941" textFill="#8900ff">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <Pane prefHeight="532.0" prefWidth="17.0" />
+            <AnchorPane prefHeight="532.0" prefWidth="232.0" styleClass="round-background-white">
+               <children>
+                  <Circle fill="#2169ff" radius="104.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" AnchorPane.bottomAnchor="215.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="38.0" />
+                  <Circle fx:id="imageGame" fill="DODGERBLUE" radius="100.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="5.0" AnchorPane.bottomAnchor="223.0" AnchorPane.leftAnchor="44.0" AnchorPane.rightAnchor="44.0" AnchorPane.topAnchor="42.0" />
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <Label text="เกมส์" textFill="#2169ff">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label text="วงศกร เสนีวงศ์ ณ อยุธยา">
+                           <font>
+                              <Font size="26.0" />
+                           </font>
+                        </Label>
+                        <Label text="6310401980" textFill="#2169ff">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <Pane prefHeight="532.0" prefWidth="17.0" />
+            <AnchorPane prefHeight="532.0" prefWidth="232.0" styleClass="round-background-white">
+               <children>
+                  <Circle fill="#00a16b" radius="104.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" AnchorPane.bottomAnchor="286.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="38.0" />
+                  <Circle fx:id="imageView" fill="DODGERBLUE" radius="100.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="5.0" AnchorPane.bottomAnchor="290.0" AnchorPane.leftAnchor="44.0" AnchorPane.rightAnchor="44.0" AnchorPane.topAnchor="42.0" />
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <Label text="วิว" textFill="#00a16b">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label text="ณัฐกานต์ ขีดเข้ม">
+                           <font>
+                              <Font size="26.0" />
+                           </font>
+                        </Label>
+                        <Label text="6310400983" textFill="#00a16b">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

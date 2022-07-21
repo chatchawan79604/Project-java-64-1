@@ -1,0 +1,16 @@
+*{
+    tab-color : linear-gradient( to right top, #eba9fa, #9df1e9);
+    fonts-tab-color : #1f066c;
+    button-color : linear-gradient( to right top, #eba9fa, #9df1e9);
+    fonts-button-color : #1f066c;
+    background-color : #ffffff;
+    fonts-general-clolr : #FFFFFF;
+    text-hover-general: #ffffff;
+
+    /*-----------------admin---------------------*/
+    primary-color:linear-gradient( to right top, #FFCCE7,#99FFFF);
+    second-color:#1f066c;
+    hover-color : #ffffff;
+    text-color : #1f066c;
+
+}
